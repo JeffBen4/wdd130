@@ -1,47 +1,67 @@
+:root {
+    --primary-color: steelblue;
+    --secondary-color: #eee;
+    --text-color: #333;
+    --nav-link-color: blue;
+    --border-color: rgb(0 0 0 / 0.2);
+    --box-shadow: 0 0 30px gray;
+    --padding: 1rem;
+    --margin: 1rem;
+    --image-width: 200px;
+    --footer-border-color: #000;
+}
+
+/* Estilos generales */
 main {
     max-width: 840px;
 }
+
 h1 {
-    color: steelblue;
+    color: var(--primary-color);
 }
+
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 /0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    margin: var(--margin);
+    border: 1px solid var(--border-color);
+    padding: var(--padding);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     text-align: center;
 }
+
 aside img {
-    width: 200px;
+    width: var(--image-width);
     height: auto;
     margin: 10px;
 }
+
 main img {
-    width: 200px;
+    width: var(--image-width);
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--primary-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
-    
+    box-shadow: var(--box-shadow);
 }
-p {padding: 0;}
+
+p {
+    padding: 0;
+}
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--footer-border-color);
     text-align: center;
 }
+
 nav a {
-    color: blue;
+    color: var(--nav-link-color);
     padding: 10px;
     display: block;
-
 }
 
 nav {
-    color: blue;
+    color: var(--nav-link-color);
     padding: 10px;
     display: block;
 }
