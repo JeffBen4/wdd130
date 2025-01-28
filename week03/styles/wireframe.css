@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #6F7C12;
+    --secondary-color: #483519;
+    --accent1-color: #AAD922;
+    --accent2-color: #4FAA58;
+    --text-color: #000000;
+}   
+
+body {
+    font-family: "Roboto", serif;
+    font-weight: 400px;
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; }
+
+header {
+    font-family: "Kanit", serif;;
+}
