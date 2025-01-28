@@ -31,7 +31,6 @@ header {
     background-color: var(--primary-color);
     height: var(--header-height);
     color: white;
-    text-decoration: none;
 }
 
 header img {
@@ -52,28 +51,35 @@ header nav a {
 }
 
 .hero {
-    position: relative; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    text-align: center;
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
     position: absolute;
-    float: right;
-    top: 50%; 
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta el centro real */
-    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 3rem; /* Ajusta el tamaño del texto */
-    padding: 1rem;
+    font-size: 3rem;
+    padding: 1rem 2rem;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 .hero p {
@@ -88,6 +94,7 @@ header nav a {
     max-width: 600px;
     font-size: 1rem;
     line-height: 1.5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 article {
@@ -156,11 +163,10 @@ footer .sociallinks img {
 
 footer .sociallinks img:hover {
     transform: scale(1.1);
-    filter: brightness(1.2); /* Aumenta el brillo al pasar el mouse */
+    filter: brightness(1.2);
 }
 
 a {
     text-decoration: none;
-    color: inherit; /* Mantiene el color del texto del contexto */
-    transition: color 0.3s ease; /* Efecto suave al cambiar de color */
-}
+    color: inherit;
+    transition: color 0.3s ease;
