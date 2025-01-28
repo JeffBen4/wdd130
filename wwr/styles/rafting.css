@@ -68,20 +68,6 @@ header nav a {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3rem;
-    padding: 1rem 2rem;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-
 .hero p {
     position: absolute;
     bottom: 10%;
@@ -116,7 +102,7 @@ article img {
 }
 
 section {
-    margin: 2rem auto;
+    margin: 2rem;
     max-width: 1200px;
     text-align: center;
 }
@@ -170,3 +156,4 @@ a {
     text-decoration: none;
     color: inherit;
     transition: color 0.3s ease;
+}
