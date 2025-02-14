@@ -122,3 +122,19 @@ footer p {
 .social-icons a img:hover {
     transform: scale(1.2);
 }
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.team figure {
+    text-align: center;
+}
+.team img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
